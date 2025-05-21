@@ -1,0 +1,4 @@
+check-signatures:
+  script:
+    - git -c "gpg.ssh.allowedsignersfile=$PWD/allowed_signers" log --show-signature
+
